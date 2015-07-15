@@ -37,15 +37,13 @@ header {
   width: 95%;
 }
 
-figcaption {
+.quote {
   width: 95%;
-}
-
-figcaption p {
   margin: 10px 0;
   padding: 90px 70px 40px 120px;
   background-color: #F9FFD9;
-  border-radius: 25px;
+  border-top-right-radius: 75%;
+  border-bottom-left-radius: 25%;
 }
 
 iframe {
@@ -56,33 +54,60 @@ iframe {
   height: 480px;
 }
 
+
+/* Contact Area 
+   ================================================================ */
 #contact {
-  float: right;
+  position: absolute;
+  display: inline-block;
+  width: 200px;
+  height: 100%
+  top: 0;
+  right: 5%;
 }
 
+.contactImageLink {
+  opacity: 0;
+  visibility: hidden;
+  transition: all 300ms ease;
+}
 .contactUsImage {
-  height: 150px;
+  width: 200px;
+  height: 100%;
   border-radius: 0px;
   border: none;
 }
 
-#contactInfo {
-  width: 25%;
-  position: relative;
+.contactInfo {
+  opacity: 0;
+  visibility: hidden;
+  width: 200px;
+  height: 100%;
+  position: absolute;
+  top: 20px;
+  right: 5%;
+  transition: all 300ms ease;
 }
 
-#contactInfo p {
-  display: inline;
+.contactInfo p {
+    margin: 0;
 }
 
 #contactInfoClose {
   position: absolute;
-  top: 20px;
-  right: 20px;
+  top: 0;
+  right: -3%;
   text-decoration: none;
   color: black;
 }
 
+.show {
+  opacity: 1;
+  visibility: visible;
+}
+
+/* Photos
+   ================================================================ */
 .bandPhoto {
   margin: 10px 0;
   border-radius: 25px;
@@ -95,7 +120,8 @@ iframe {
 }
 
 #showsPhoto {
-  width: 40%;
+  width: 45%;
+  display: inline-block;
 }
 
 #aboutPhoto {
@@ -113,7 +139,6 @@ iframe {
 
 .widget_iframe {
   display: inline-block;
-  width: 90%;
   border: none;
 }
 
@@ -169,7 +194,7 @@ h2 {
 
 h3 {
   font-size: 3rem;
-  padding-top: 40px;
+  padding-top: 6rem;
   text-transform: uppercase;
 }
 
