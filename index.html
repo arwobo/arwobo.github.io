@@ -5,11 +5,9 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge"> <!-- Tells Internet Explorer it should use the latest, or edge, version of the IE rendering environment. -->
 
     <title>Weepin' Willows | Chicago, IL</title> 
-    <meta name="description" content=""><!-- Description, often used as 'snippet' by search engines. -->
+    <meta name="description" content="The Weepin' Willows are Chicago's premier Patsy Cline cover band."><!-- Description, often used as 'snippet' by search engines. -->
 
     <meta name="viewport" content="width=device-width, initial-scale=1"> <!-- Will make sure your site scales properly for mobile http://goo.gl/teFgfK-->
-
-    <!-- Note to self: get Playfair Display Google Font -->
 
     <link href='http://fonts.googleapis.com/css?family=Mr+Dafoe|Ek+Mukta:400,800|Playfair+Display:400,700,900' rel='stylesheet' type='text/css'>
 
@@ -22,7 +20,7 @@
 <body>
 	<div class="header-wrapper">
 		<header>
-			<h1><a href="#"><span class="here">Here's &nbsp;the &nbsp;</span>Weepin' Willows</a></h1>
+			<h1><a href="#"><span class="here">Here's &nbsp;the &nbsp;</span>WEEPIN' WILLOWS</a></h1>
 
 			
 			<div id="contact">
@@ -60,69 +58,52 @@
 		<h3>Shows</h3>			
 		<p>Find us on <a href="http://www.facebook.com/weepinwillowsband">Facebook</a> or <a href="https://twitter.com/weepin_willows">Twitter</a> for the latest info on our shows!</p>				
 		<img class="bandPhoto" id="showsPhoto" src="images/willows_midsommarfest.jpg" alt="Weepin' Willows at Midsommarfest, Chicago, 2014">
-		<div class="widget_iframe" style="display:inline-block;width:48%;height:550px;margin:0;padding:0;border:0;"><iframe class="widget_iframe" src="https://www.reverbnation.com/widget_code/html_widget/artist_3281394?widget_id=52&amp;posted_by=artist_3281394&pwc[design]=customized&pwc[background_color]=%23000000&pwc[layout]=compact&pwc[show_map]=0%2C1&pwc[size]=fit" width="100%" height="100%" frameborder="0" scrolling="no"></iframe><div class="footer_branding" style="margin-top:-5px;font-size:10px;font-family:Arial;"><center><a href="http://www.reverbnation.com/band-promotion/how-to-sell-music-on-itunes?utm_campaign=a_features_distribution&utm_medium=widget&utm_source=HTML5_Show_Schedule&utm_content=widgetfooter_Learn how to get your song on itunes at ReverbNation.com" target="_blank" style="text-decoration:none;color:#444;">Learn how to get your song on itunes at ReverbNation.com</a></center></div></div>
+		<div class="widget_iframe" id="narrowIframe" style="display:inline-block;width:48%;height:500px;margin:0;padding:0;border:0;"><iframe class="widget_iframe"  src="https://www.reverbnation.com/widget_code/html_widget/artist_3281394?widget_id=52&amp;posted_by=artist_3281394&pwc[design]=customized&pwc[background_color]=%23000000&pwc[layout]=compact&pwc[show_map]=0%2C1&pwc[size]=fit" width="100%" height="100%" frameborder="0" scrolling="no"></iframe><div class="footer_branding" style="margin-top:-5px;font-size:10px;font-family:Arial;"><center><a href="http://www.reverbnation.com/band-promotion/how-to-sell-music-on-itunes?utm_campaign=a_features_distribution&utm_medium=widget&utm_source=HTML5_Show_Schedule&utm_content=widgetfooter_Learn how to get your song on itunes at ReverbNation.com" target="_blank" style="text-decoration:none;color:#444;">Learn how to get your song on itunes at ReverbNation.com</a></center></div></div>
 	</section>
 	
 	<section id="listen" class="clearfix">
 		<h3>Listen</h3>
-		<div id="videoContainer" class="clearfix">
-			<iframe id="video1" class="show" src="https://www.youtube.com/embed/fVT7QSl_bXY" frameborder="0" allowfullscreen></iframe>
+		
+		<p class="extraNoteNarrow">Hear an interview with the band and more songs recorded live on <a href="https://soundcloud.com/morningshiftwbez/130227-morning-shift-seg-g">WBEZ's Morning Shift here</a>.</p>
 
-			<iframe id="video2" class="hide" src="https://www.youtube.com/embed/5lRvrCXDkqo" frameborder="0" allowfullscreen></iframe>
-
-			<iframe id="video3" class="hide" src="https://www.youtube.com/embed/ifPwUUV8zu0" frameborder="0" allowfullscreen></iframe>
-		</div>
-
-		<div id="videoSelector">
-			<div id="selector1" class="selectorBox">
-				<h4>Crazy</h4>
+		<div id="videoSelector" class="clearfix">
+			<div id="selector1" class="selectorBox activeSelector">
+				<h4><a href="#">Crazy</a></h4>
 				<p> Pheasant Run Resort | St. Charles, IL | 8/2/2014</p>
 			</div>
 			
 			<div id="selector2" class="selectorBox">
-				<h4>Try Again</h4>
+				<h4><a href="#">Try Again</a></h4>
 				<p> WBEZ Studio | Chicago, IL | 3/5/2013</p>
-				<p><em>Hear the whole interview and more songs recorded live on WBEZ's Morning Shift <a href="https://soundcloud.com/morningshiftwbez/130227-morning-shift-seg-g">here</a>.</em></p>
+				<p class="extraNote"><em>Hear the whole interview and more songs recorded live on <a href="https://soundcloud.com/morningshiftwbez/130227-morning-shift-seg-g">WBEZ's Morning Shift here</a>.</em></p>
 			</div>
 			
 			<div id="selector3" class="selectorBox">
-				<h4>Crazy Dreams</h4>
+				<h4><a href="#">Crazy Dreams</a></h4>
 				<p> Design Harvest Fest | Chicago, IL | 9/20/12</p>
 			</div>
 		</div>	
 
+		<div id="videoContainer" class="clearfix">
+			<iframe id="video1" class="listenVideo show" src="https://www.youtube.com/embed/fVT7QSl_bXY" frameborder="0" allowfullscreen></iframe>
 
+			<iframe id="video2" class="listenVideo hide" src="https://www.youtube.com/embed/5lRvrCXDkqo" frameborder="0" allowfullscreen></iframe>
 
-		<!-- <div class="slide slide-1">
-			<h4>Crazy</h4>
-			<p> Pheasant Run Resort | St. Charles, IL | 8/2/2014</p>
-			<iframe src="https://www.youtube.com/embed/fVT7QSl_bXY" frameborder="0" allowfullscreen></iframe>
+			<iframe id="video3" class="listenVideo hide" src="https://www.youtube.com/embed/ifPwUUV8zu0" frameborder="0" allowfullscreen></iframe>
 		</div>
-		
-		<div class="slide slide-2">
-			<h4>Try Again</h4>
-			<p> WBEZ Studio | Chicago, IL | 3/5/2013</p>
-			<p><em>Hear the whole interview and more songs recorded live on WBEZ's Morning Shift <a href="https://soundcloud.com/morningshiftwbez/130227-morning-shift-seg-g">here</a>.</em></p>
-			<iframe src="https://www.youtube.com/embed/5lRvrCXDkqo" frameborder="0" allowfullscreen></iframe>
-		</div>
-		
-		<div class="slide slide-3"></div>
-			<h4>Crazy Dreams</h4>
-			<p> Design Harvest Fest | Chicago, IL | 9/20/12</p>
-			<iframe src="https://www.youtube.com/embed/ifPwUUV8zu0" frameborder="0" allowfullscreen></iframe>
-		</div>	 -->
 	</section>
 
 	<section id="about">
 		<h3>About</h3>
 		<article class="clearfix">
+			<img class="bandPhoto" id="aboutPhoto" src="images/WeepinWillows-5533.jpg" alt="">
+			<p class="imageCredit"><em>Image credit: &nbsp;<a href="http://www.jacobhand.com">Jacob Hand Photography</a></em></p>
 			<div class="bandBlurb">
 				<p>The Weepin' Willows are Chicago's own Patsy Cline cover band.</p>
 				<p>Led by singer Natalie Jose, the band formed in late 2009 and has been entertaining audiences with Patsy's extensive and varied songbook ever since.</p>
-				<p>With instrumentation featuring lead guitar, pedal steel, piano, drums, and upright bass, the Weepin' Willows perform it all — from familiar ballads such as "Crazy" and "She's Got You" to the upbeat honky tonk and rockabilly stomps of "Seven Lonely Days" and "Stupid Cupid."</p>					
+				<p>With instrumentation featuring lead guitar, pedal steel, piano, drums, and upright bass, we perform it all — from familiar ballads such as "Crazy" and "She's Got You" to the upbeat honky tonk and rockabilly stomps of "Seven Lonely Days" and "Stupid Cupid."</p>
+				<p>We've played a variety of venues throughout the region over the years - from corner bars to casinos, street festivals to wedding receptions to retirement communities. Contact Natalie at <a href="mailto:nataliejose@gmail.com">nataliejose@gmail.com</a> for booking inquiries.</p>					
 			</div>
-			<img class="bandPhoto" id="aboutPhoto" src="images/WeepinWillows-5533.jpg" alt="">
-			<p class="imageCredit"><em>Image credit: &nbsp;<a href="http://www.jacobhand.com">Jacob Hand Photography</a></em></p>
 		</article>
 	</section>
 	

@@ -46,11 +46,29 @@ header {
 .quote {
   width: 95%;
   margin: 8rem 0 0 0;
-  padding: 90px 150px 40px 70px;
+  padding: 40px 150px 40px 70px;
   background-color: #F9FFD9;
-  border-top-right-radius: 75%;
+  border-top-right-radius: 25%;
   border-bottom-left-radius: 25%;
 }
+
+.quote p {
+  font-size: 1rem;
+  letter-spacing: 1.25px;
+}
+
+.bandBlurb {
+  width: 30%;
+  font-size: .95rem;
+  letter-spacing: 1.25px;
+}
+
+.widget_iframe {
+  float: left;
+  border: none;
+  margin-top: 15px;
+}
+
 
 
 /* Contact Area 
@@ -86,8 +104,9 @@ header {
   right: 5%;
   transition: all 300ms ease;
   font-size: .9rem;
+  letter-spacing: 1.25px;
   background-color: #F9FFD9;
-  padding: 20px 10px;
+  padding: 30px 10px;
   border-radius: 10%;
 }
 
@@ -123,28 +142,17 @@ header {
 }
 
 #aboutPhoto {
+  float: right;
   width: 60%;
   margin-left: 5%;
-}
-
-.bandBlurb {
-  float: left;
-  width: 30%;
-  font-size: .95rem;
-  letter-spacing: 1.25px;
-}
-
-.widget_iframe {
-  float: left;
-  border: none;
-  margin-top: 15px
+  margin-right: 5%
 }
 
 /* Video Slider 
    ================================================================ */
 #videoContainer {
   position: relative;
-  float: right;
+  float: left;
   height: 500px;
   width: 60%;
 }
@@ -157,23 +165,28 @@ header {
   margin-right: auto;
   border-radius: 25px;
   border: 5px solid #F9FFD9;
+  padding: 5px;
+  background-color: #F9FFD9; 
   width: 640px;
   height: 480px;
 }
 
-.hide {
+.listenVideo {
   opacity: 0;
   visibility: hidden;
+  transition: all 300ms ease;
 }
 
 .show {
   opacity: 1;
   visibility: visible;
+  transition: all 1s ease;
 }
 
 #videoSelector {
   float: left;
   width: 35%;
+  margin-right: 2%;
 }
 
 .selectorBox {
@@ -183,10 +196,25 @@ padding-left: 10px;
 margin: 5px 0px;
 }
 
-.selectorBox .active {
-  border: 5px solid #F9FFD9;
+.selectorBox h4 a {
+  text-decoration: none;
+  color: #F4FF5A;
+
 }
 
+.activeSelector {
+  border: 5px solid #F9FFD9;
+  transition: all 300ms ease;
+  background-color: #FF8663;
+}
+
+.activeSelector h4 {
+  font-size: 2.25rem;
+}
+
+.extraNoteNarrow {
+  display: none;
+}
 
 /* Headings
    ================================================================ */
@@ -197,7 +225,7 @@ h1, h2, h3, h4, h5, h6 {
 
 h1 {
   font-size: 5rem;
-  font-weight: 400;
+  font-weight: 800;
   display: inline;
 }
 
@@ -230,6 +258,8 @@ h4 {
    ================================================================ */
 p {
   font-family: "Playfair Display";
+  font-size: .95rem;
+  letter-spacing: 1.25px;
 }
 
 a,
@@ -262,15 +292,12 @@ p a {
   color: #F9FFD9;
 }
 
-
-/* Header
-   ================================================================ */
-
-
-
-/* Footer
-   ================================================================ */
-
+#about .imageCredit {
+  float: right;
+  margin-right: 5%;
+  width: 50%;
+  display: inline;
+}
 
 
 /* Navigation
@@ -327,9 +354,81 @@ header nav a:hover {
 }
 
 
-/* Buttons
-   ================================================================ */
-
-
 /* Responsive sizing
    ================================================================ */
+/* Extra small devices (phones, 320px and up) */
+@media screen and (min-width: 320px) and (max-width: 698px) { 
+  #contact {display: none;}
+  .header-wrapper {height: 140px;}
+  h1 { font-size: 2rem; } 
+  .here {font-size: 1.25rem;} 
+  h2 {font-size: 1.25rem;} 
+  h3 {padding-top: 3rem;}
+  header nav ul li {width: 33%;} 
+  header nav a {padding-top: 0; font-size: 1rem;}
+  .sticky h1 {font-size: 2rem;} 
+  .sticky #contact {display: none}
+  .sticky {height: 96px;}
+  .quote {margin: 2rem 0 0 0; padding: 20px;}
+  .quote p {font-size: .9rem;}
+  #showsPhoto { width: 95%; float: none; margin-right: 0;} 
+  #narrowIframe {width: 95%;}
+  #videoSelector { float: none; width: 100%;} 
+  #videoContainer {float: none; display: block; width: 95%; padding-bottom: 56.25%; padding-top: 25px; height: 0;} 
+  #listen iframe {float: none; display: block; top: 0; left: 0; width: 100%; height: 100%;} 
+  .selectorBox {float: left; width: 31%; margin-right: 1%; font-size: .85rem; height: 155px;} 
+  .selectorBox h4 {font-size: 1.5rem;}
+  .selectorBox p {font-size: .75rem; margin-top: .25rem;}
+  .extraNote {display: none;} 
+  .extraNoteNarrow {display: block;}
+  #aboutPhoto {width: 95%; margin-right: 5%}
+  #about .imageCredit {float: none;}
+  .bandBlurb {width: 95%;}
+}  
+
+/* Smallish devices  max-width: 800 */
+
+@media screen and (min-width: 698px) and (max-width: 800px) { 
+  .header-wrapper {height: 220px;}
+  h1 { font-size: 2.5rem; } 
+  .here {font-size: 1.5rem} 
+  h2 {font-size: 1.25rem;} 
+  header nav ul li {width: 33%} 
+  .sticky h1 {font-size: 2rem;} 
+  .sticky #contact {display: none}
+  .sticky {height: 96px;}
+  .quote {margin: 2rem 0 0 0; padding: 20px 30px 20px 30px;}
+  #showsPhoto { width: 95%; float: none; margin-right: 0;} 
+  #narrowIframe {width: 95%;}
+  #videoSelector { float: none; width: 100%;}
+  #videoContainer {float: none; display: block;} 
+  #listen iframe {float: none; display: block;} 
+  .selectorBox {float: left; width: 30%; margin-right: 1%; height: 110px;} 
+  .selectorBox h4 {font-size: 1.5rem;}
+  .selectorBox p {font-size: .75rem;}
+  .extraNote {display: none;} 
+  .extraNoteNarrow {display: block;}
+  .bandBlurb {width: 95%;}
+}
+
+/* Small devices (tablets, 800px and up) */
+@media screen and (min-width: 800px) and (max-width: 960px) { 
+  .header-wrapper {height: 240px;}
+  h1 { font-size: 3rem; } 
+  #videoSelector { float: none; width: 100%;} 
+  #videoContainer {float: none; display: block;} 
+  #listen iframe {float: none; display: block;} 
+  .selectorBox {float: left; width: 30%; margin-right: 1%;} 
+  .extraNote {display: none} 
+  .extraNoteNarrow {display: block;}
+  .bandBlurb {width: 95%;}
+  }
+
+/* Medium devices (desktops, 992px and up) */
+@media screen and (min-width: 960px) and (max-width: 1110px) {  
+  .header-wrapper {height: 270px;}
+  h1 { font-size: 4rem;} 
+  #videoSelector { width: 30%;} 
+  #listen iframe {width: 560px; height: 315px;}
+}
+

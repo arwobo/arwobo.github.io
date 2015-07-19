@@ -2,8 +2,8 @@
 
 	$(window).scroll(function() {
 		
-		// if the windowis more than 500px from top,
-		if ($(this).scrollTop() > $('.quote').offset().top - 600){  
+		// if the window is more than 500px from top,
+		if ($(this).scrollTop() > $('.quote').offset().top - 200){  
    		
    		// add sticky class to header
    		$('header').addClass("sticky");
@@ -118,8 +118,76 @@
 
 
 // // In "Listen" section (video slider interaction)
-	
 
+	// On click of video selector box
+	$("#selector1 h4 a").on("click", function (event) {
+		event.preventDefault();	
+
+		// Clear "active" class from all boxes
+		clearActive();
+
+		// Add "active" class to selected box
+		$(this).closest("div").addClass("activeSelector");
+
+		// Remove "show" class from all videos, add "hide", and add "show" class to selected video
+		showVideo1();
+	
+	});	
+
+	$("#selector2 h4 a").on("click", function (event) {
+		event.preventDefault();	
+
+		// Clear "active" class from all boxes
+		clearActive();
+
+		// Add "active" class to selected box
+		$(this).closest("div").addClass("activeSelector");
+
+		// Remove "show" class from all videos, add "hide", and add "show" class to selected video
+		showVideo2();
+	
+	});	
+
+	$("#selector3 h4 a").on("click", function (event) {
+		event.preventDefault();	
+
+		// Clear "active" class from all boxes
+		clearActive();
+
+		// Add "active" class to selected box
+		$(this).closest("div").addClass("activeSelector");
+
+		// Remove "show" class from all videos, add "hide", and add "show" class to selected video
+		showVideo3();
+	
+	});	
+
+
+	// Functions for hiding all videos and then showing each video
+	function showVideo1	() {
+		hideVideos();
+		$("#video1").addClass("show");
+	}
+
+	function showVideo2	() {
+		hideVideos();
+		$("#video2").addClass("show");
+	}
+
+	function showVideo3	() {
+		hideVideos();
+		$("#video3").addClass("show");
+	}
+
+	// Function for hiding all videos
+	function hideVideos () {
+		$(".listenVideo").removeClass("show");
+	}
+
+	// Function for clearing active state from selector box
+	function clearActive () {
+		$(".selectorBox").removeClass("activeSelector");
+	}
 
 
 
