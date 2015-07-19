@@ -27,7 +27,6 @@ body {
   width: 95%;
   max-width: 1240px;
   background: #EE6842;
-  outline: 0;
 }
 
 
@@ -41,6 +40,10 @@ header {
 
 .header-wrapper {
   height: 291px;
+}
+
+.narrowBreak {
+  display: none;
 }
 
 .quote {
@@ -77,7 +80,7 @@ header {
   position: absolute;
   display: inline-block;
   width: 200px;
-  height: 100%
+  height: 150px;
   top: 0;
   right: 5%;
 }
@@ -85,12 +88,15 @@ header {
 .contactImageLink {
   opacity: 0;
   visibility: hidden;
+  -o-transition: all 300ms ease;
+  -moz-transition: all 300ms ease;
+  -webkit-transition: all 300ms ease;
   transition: all 300ms ease;
 }
 .contactUsImage {
   width: 200px;
-  height: 100%;
-  border-radius: 0px;
+  height: 100;
+  border-radius: 0;
   border: none;
 }
 
@@ -102,6 +108,9 @@ header {
   position: absolute;
   top: 10px;
   right: 5%;
+  -o-transition: all 300ms ease;
+  -moz-transition: all 300ms ease;
+  -webkit-transition: all 300ms ease;
   transition: all 300ms ease;
   font-size: .9rem;
   letter-spacing: 1.25px;
@@ -160,7 +169,6 @@ header {
 #listen iframe {
   position: absolute;
   top: 0;
-  height: 500px;
   margin-left: auto;
   margin-right: auto;
   border-radius: 25px;
@@ -174,13 +182,19 @@ header {
 .listenVideo {
   opacity: 0;
   visibility: hidden;
+  -o-transition: all 300ms ease;
+  -moz-transition: all 300ms ease;
+  -webkit-transition: all 300ms ease;
   transition: all 300ms ease;
 }
 
 .show {
   opacity: 1;
   visibility: visible;
-  transition: all 1s ease;
+  -o-transition: all 300ms ease;
+  -moz-transition: all 300ms ease;
+  -webkit-transition: all 300ms ease;
+  transition: all 300ms ease;
 }
 
 #videoSelector {
@@ -193,7 +207,7 @@ header {
 border-radius: 25px;
 border: 2px solid #F9FFD9;
 padding-left: 10px;
-margin: 5px 0px;
+margin: 5px 0;
 }
 
 .selectorBox h4 a {
@@ -204,6 +218,9 @@ margin: 5px 0px;
 
 .activeSelector {
   border: 5px solid #F9FFD9;
+  -o-transition: all 300ms ease;
+  -moz-transition: all 300ms ease;
+  -webkit-transition: all 300ms ease;
   transition: all 300ms ease;
   background-color: #FF8663;
 }
@@ -260,6 +277,7 @@ p {
   font-family: "Playfair Display";
   font-size: .95rem;
   letter-spacing: 1.25px;
+  margin-right: 5%;
 }
 
 a,
@@ -359,30 +377,32 @@ header nav a:hover {
 /* Extra small devices (phones, 320px and up) */
 @media screen and (min-width: 320px) and (max-width: 698px) { 
   #contact {display: none;}
-  .header-wrapper {height: 140px;}
-  h1 { font-size: 2rem; } 
+  .header-wrapper {height: 180px;}
+  h1 { font-size: 2.5rem; line-height: 1;} 
+  .narrowBreak {display: block;}
   .here {font-size: 1.25rem;} 
   h2 {font-size: 1.25rem;} 
-  h3 {padding-top: 3rem;}
+  h3 {padding-top: 4rem;}
+  h4 {line-height: 1;}
   header nav ul li {width: 33%;} 
   header nav a {padding-top: 0; font-size: 1rem;}
   .sticky h1 {font-size: 2rem;} 
-  .sticky #contact {display: none}
-  .sticky {height: 96px;}
+  .sticky header nav a {padding-top: 0; font-size: 1rem;}
+  .imageCredit {font-size: .8rem;}
   .quote {margin: 2rem 0 0 0; padding: 20px;}
   .quote p {font-size: .9rem;}
   #showsPhoto { width: 95%; float: none; margin-right: 0;} 
-  #narrowIframe {width: 95%;}
+  #narrowIframe {width: 85% !important;}
   #videoSelector { float: none; width: 100%;} 
   #videoContainer {float: none; display: block; width: 95%; padding-bottom: 56.25%; padding-top: 25px; height: 0;} 
   #listen iframe {float: none; display: block; top: 0; left: 0; width: 100%; height: 100%;} 
   .selectorBox {float: left; width: 31%; margin-right: 1%; font-size: .85rem; height: 155px;} 
   .selectorBox h4 {font-size: 1.5rem;}
-  .selectorBox p {font-size: .75rem; margin-top: .25rem;}
+  .selectorBox p {font-size: .75rem; margin-top: .5rem;}
   .extraNote {display: none;} 
   .extraNoteNarrow {display: block;}
   #aboutPhoto {width: 95%; margin-right: 5%}
-  #about .imageCredit {float: none;}
+  #about .imageCredit {width: 100%;}
   .bandBlurb {width: 95%;}
 }  
 
@@ -399,7 +419,7 @@ header nav a:hover {
   .sticky {height: 96px;}
   .quote {margin: 2rem 0 0 0; padding: 20px 30px 20px 30px;}
   #showsPhoto { width: 95%; float: none; margin-right: 0;} 
-  #narrowIframe {width: 95%;}
+  #narrowIframe {width: 85% !important;}
   #videoSelector { float: none; width: 100%;}
   #videoContainer {float: none; display: block;} 
   #listen iframe {float: none; display: block;} 
@@ -431,4 +451,3 @@ header nav a:hover {
   #videoSelector { width: 30%;} 
   #listen iframe {width: 560px; height: 315px;}
 }
-

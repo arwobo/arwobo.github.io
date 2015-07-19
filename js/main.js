@@ -44,7 +44,7 @@
 			var sectionTarget = $(this).attr("href");
 
 			// find the top of the section
-			var targetOffset = $(sectionTarget).offset().top - 50;
+			var targetOffset = $(sectionTarget).offset().top - 60;
 
 			// animate it
 			$("html, body").animate({scrollTop: targetOffset
@@ -72,7 +72,7 @@
 	  // for each section,  
 	  sections.each(function() {
 	    // define variables for top and bottom of section
-	    var top = $(this).offset().top - nav_height;
+	    var top = $(this).offset().top - nav_height - 100;
 	    var bottom = top + $(this).outerHeight();
 	 
 	    // if the current position is greater than top value, and less than bottom,
