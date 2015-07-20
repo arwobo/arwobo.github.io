@@ -363,7 +363,7 @@ header nav a:hover {
 }
 
 .sticky nav a {
-  padding: 0;
+  padding: 20px 0 0 0;
   font-size: 1.25rem;
 }
 
@@ -387,7 +387,8 @@ header nav a:hover {
   header nav ul li {width: 33%;} 
   header nav a {padding-top: 0; font-size: 1rem;}
   .sticky h1 {font-size: 2rem;} 
-  .sticky header nav a {padding-top: 0; font-size: 1rem;}
+  .sticky {height: 110px;}
+  .sticky nav a {padding: 5px 0 0 0; font-size: 1rem;}
   .imageCredit {font-size: .8rem;}
   .quote {margin: 2rem 0 0 0; padding: 20px;}
   .quote p {font-size: .9rem;}
